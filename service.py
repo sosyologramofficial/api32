@@ -1518,7 +1518,7 @@ AVAILABLE_MODELS = {
         {
             "id": "seedance_2_5",
             "name": "Seedance 2.5",
-            "description": "Seedance 2.5 by BytePlus - MAX: 1080p:11sn, 720p:24sn, 480p:30sn",
+            "description": "Seedance 2.5 by BytePlus - MAX: 1080p:11sn, 720p:23sn, 480p:30sn",
             "credit": 5,
             "supports_start_frame": True,
             "supports_end_frame": True,
@@ -1529,7 +1529,7 @@ AVAILABLE_MODELS = {
             "supported_sizes": ["16:9", "9:16", "1:1"],
             "supported_durations_by_resolution": {
                 "1080p": list(range(4, 12)),
-                "720p": list(range(4, 25)),
+                "720p": list(range(4, 24)),
                 "480p": list(range(4, 31)),
             },
             "supported_durations": list(range(4, 31)),
@@ -1541,7 +1541,7 @@ AVAILABLE_MODELS = {
             },
             "constraints": [
                 {"if": {"resolution": "1080p"}, "then": {"duration": list(range(4, 12))}},
-                {"if": {"resolution": "720p"}, "then": {"duration": list(range(4, 25))}},
+                {"if": {"resolution": "720p"}, "then": {"duration": list(range(4, 24))}},
                 {"if": {"resolution": "480p"}, "then": {"duration": list(range(4, 31))}},
             ],
             "default_size": "16:9",
@@ -1550,7 +1550,7 @@ AVAILABLE_MODELS = {
             "duration_config": {'type': 'continuous', 'min': 4, 'max': 30, 'step': 1, 'default': 5},
             "duration_config_by_resolution": {
                 "1080p": {'type': 'continuous', 'min': 4, 'max': 11, 'step': 1, 'default': 5},
-                "720p": {'type': 'continuous', 'min': 4, 'max': 24, 'step': 1, 'default': 5},
+                "720p": {'type': 'continuous', 'min': 4, 'max': 23, 'step': 1, 'default': 5},
                 "480p": {'type': 'continuous', 'min': 4, 'max': 30, 'step': 1, 'default': 5},
             },
             "max_prompt_length": 20000
